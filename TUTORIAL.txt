@@ -37,7 +37,7 @@ Thank you dear,  Jihadi4Prez to share this good tutorial,
 System Requirements:
 
 + ---------------------
-| OS: Debian 86x_64x
+| OS: Debian 9  86x_64x
 | RAM: 8GB / 10GB
 | Internet Speed:
 | Down
@@ -116,7 +116,12 @@ code:
  apt-get update -y
  apt-get upgrade -y
  
- apt-get install gcc golang electric-fence sudo git -y
+ apt-get install gcc electric-fence sudo git -y
+ 
+ wget https://dl.google.com/go/go1.15.2.linux-amd64.tar.gz
+ 
+ tar -xvf go1.15.2.linux-amd64.tar.gz
+ sudo mv go /usr/local
  
  apt-get install mysql-server mysql-client -y
  
@@ -203,7 +208,8 @@ export PATH=$PATH:/etc/xcompile/armv6l/bin
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/Documents/go
 
-
+go get github.com/go-sql-driver/mysql
+go get github.com/mattn/go-shellwords
 
 -------------------------NO MORE CODE-------------------STOP HERE AND READ----------------
 
@@ -220,30 +226,13 @@ code:
 ./build.sh debug telnet
 
 
-
--------------------------NO MORE CODE-------------------STOP HERE AND READ----------------
-**NOTE**
-[Step4] - Continue...
-
-
-
- If you did this command before step 2 & 3 you would get an error about the Mysql and sql-drivers, 
- since that's what alot of people have had trouble with. This fixes that.
- 
- 
- code:
- 
- go get github.com/go-sql-driver/mysql
- go get github.com/mattn/go-shellwords
-
-
 -------------------------NO MORE CODE-------------------STOP HERE AND READ----------------
  
  
  
 [Step5] -Obfuscated string
 
-I'm running Debian 8 x86_64 so this might be diffrent for you, 
+I'm running Debian 9 x86_64 so this might be diffrent for you, 
 
 but the ../debug/enc string {your.domain.com} wasn't working for me so the fix is below,
 
@@ -343,7 +332,7 @@ Once you've done the step above were going to add the database and user perms. f
 
 
 code:
-mysql -rroot -pMySQL_Password
+mysql -u root -pMySQL_Password
 
 
 -------------------------NO MORE CODE-------------------STOP HERE AND READ----------------
