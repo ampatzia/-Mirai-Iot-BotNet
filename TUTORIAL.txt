@@ -443,6 +443,9 @@ code:
 
 Now your going to have to move the (prompt.txt) file in  ( ../mirai  ) and move into the ../mirai/release folder
 
+code:
+/home/Mirai-Source-Code/mirai# mv /home/Mirai-Source-Code/mirai/prompt.txt /home/Mirai-Source-Code/mirai/debug/
+
 -------------------------NO MORE CODE-------------------STOP HERE AND READ----------------
 [Step12] - Use the putty.
 
