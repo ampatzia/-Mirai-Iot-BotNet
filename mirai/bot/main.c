@@ -24,6 +24,15 @@
 #include "util.h"
 #include "resolv.h"
 
+
+#include <unistd.h>
+#include <arpa/inet.h> 
+#include <ctype.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <ctype.h>
+#include <netinet/in.h>
+
 static void anti_gdb_entry(int);
 static void resolve_cnc_addr(void);
 static void establish_connection(void);
