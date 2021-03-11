@@ -52,7 +52,7 @@ code:
  apt-get update -y
  apt-get upgrade -y
  
- apt-get install gcc electric-fence sudo git -y
+ apt-get install gcc electric-fence sudo git wget -y
  
  wget https://dl.google.com/go/go1.15.2.linux-amd64.tar.gz
  
