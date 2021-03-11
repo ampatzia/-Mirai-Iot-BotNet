@@ -14,6 +14,12 @@
 #include <fcntl.h>
 #include <signal.h>
 
+#include <unistd.h>
+#include <ctype.h>
+#include <stdint.h>
+#include <ctype.h>
+#include <netinet/in.h>
+
 #include "includes.h"
 #include "util.h"
 #include "table.h"
