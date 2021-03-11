@@ -9,6 +9,15 @@
 #include "headers/util.h"
 #include "headers/server.h"
 
+
+#include <unistd.h>
+#include <arpa/inet.h> 
+#include <ctype.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <ctype.h>
+#include <netinet/in.h>
+
 void hexDump (char *desc, void *addr, int len) {
     int i;
     unsigned char buff[17];
