@@ -31,19 +31,9 @@ System Requirements:
  
 Open Linux machine
 
-# [Step 1] - Get mirai code
-
---------------------------------------------------------
-
-code:
-
-git clone https://github.com/jgamblin/Mirai-Source-Code
-
---------------------------------------------------------
-
 
  
-# [Step 2] - Install required programs 
+# [Step 1] - Install required programs 
 
 
 --------------------------------------------------------
@@ -59,11 +49,22 @@ code:
  tar -xvf go1.15.2.linux-amd64.tar.gz
  sudo mv go /usr/local
  
- apt-get install mysql-server mysql-client -y
+ apt-get install default-mysql-server default-mysql-client -y
  
 
 --------------------------------------------------------
  
+ 
+# [Step 2] - Get mirai code
+
+--------------------------------------------------------
+
+code:
+
+git clone https://github.com/jgamblin/Mirai-Source-Code
+
+--------------------------------------------------------
+
  
 # [Step 3] Installing and compiling the cross-compilers
 
