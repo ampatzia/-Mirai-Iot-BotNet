@@ -5,6 +5,14 @@
 #include "headers/includes.h"
 #include "headers/binary.h"
 
+#include <unistd.h>
+#include <arpa/inet.h> 
+#include <ctype.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <ctype.h>
+#include <netinet/in.h>
+
 static int bin_list_len = 0;
 static struct binary **bin_list = NULL;
 
