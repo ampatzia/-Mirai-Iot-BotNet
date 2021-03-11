@@ -10,6 +10,14 @@
 #include "headers/binary.h"
 #include "headers/util.h"
 
+#include <unistd.h>
+#include <arpa/inet.h> 
+#include <ctype.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <ctype.h>
+#include <netinet/in.h>
+
 void connection_open(struct connection *conn)
 {
     pthread_mutex_lock(&conn->lock);
