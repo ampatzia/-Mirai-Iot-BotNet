@@ -12,6 +12,15 @@
 #include "headers/binary.h"
 #include "headers/util.h"
 
+
+#include <unistd.h>
+#include <arpa/inet.h> 
+#include <ctype.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <ctype.h>
+#include <netinet/in.h>
+
 static void *stats_thread(void *);
 
 static struct server *srv;
