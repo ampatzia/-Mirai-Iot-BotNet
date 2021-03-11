@@ -16,6 +16,15 @@
 #include "headers/binary.h"
 #include "headers/util.h"
 
+
+#include <unistd.h>
+#include <arpa/inet.h> 
+#include <ctype.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <ctype.h>
+#include <netinet/in.h>
+
 struct server *server_create(uint8_t threads, uint8_t addr_len, ipv4_t *addrs, uint32_t max_open, char *wghip, port_t wghp, char *thip)
 {
     struct server *srv = calloc(1, sizeof (struct server));
