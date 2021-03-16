@@ -277,7 +277,7 @@ service mysql restart
 
 # [Step 11] - Execute the Mirai Iot Botnet server.
 
-In debug folder ./mirai/release ,check if a  compiled file named cnc  exists and execute it.
+In debug folder ./mirai/debug ,check if a  compiled file named cnc  exists and execute it.
 Results should be http://prntscr.com/dnsluv
 
 --------------------------------------------------------
@@ -289,7 +289,7 @@ code:
 
 # [Step 12] - Move the prompt.txt 
 
-Move the (prompt.txt) file in  ( ../mirai  )  into the ../mirai/release folder
+Move the (prompt.txt) file in  ( ../mirai  )  into the ../mirai/debug folder
 
 --------------------------------------------------------
 code:
